@@ -1,0 +1,533 @@
+.buy_insurance{
+
+    &.active{
+        // .fixed_t{
+        //     display: none;
+        // }
+        // .choose_block{
+        //     display: none;
+        // }
+        .your_Insurance .choose_block_fixed{
+            display: flex;
+        }
+    }
+    @media #{$smallTab}{
+        margin-bottom: 100px;
+    }
+
+    .your_Insurance{
+        display: flex;
+        justify-content: center;
+        max-width: 915px;
+        flex-direction: column;
+        margin: 0 auto;
+        
+        .choose_block{
+            background-color: #f4f8fd;
+            border-radius: 10px;
+            
+            .choose_item{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                background-color: #feffff;
+                padding: 30px 40px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(245, 245, 245);
+                border-radius: 10px;
+                background-color: rgba(255, 255, 255, 0.929);
+                box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.1);
+                align-items: center;
+                
+
+                @media #{$mobile}{
+                    padding: 30px 20px;
+                }
+
+                .your_variant{
+                    border-right: 1px solid #eeeded;
+                    padding-right: 56px;
+                    flex: 0 0 75%;
+                  
+                    @media #{$mobile}{
+                        border-bottom: 1px solid #eeeded;
+                        margin-bottom: 20px;
+                        flex: 0 0 100%;
+                        padding: 0;
+                    }
+
+                    @media #{$bigTab}{
+                        padding-right: 13px;
+                    }
+
+                    @media #{$smallTab}{
+                        border-right: none;
+                    }
+                  
+                    .ingostrah_logo{
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 100%;
+                        object-fit: cover;
+                        margin-bottom: 25px;
+                    }
+
+                    .variant_title{
+                        font-size: 16px;
+                        
+                        color: #34434c;
+                        line-height: 1.2;
+                        text-align: left;
+                        font-weight: 400;
+                        margin-bottom: 12px;
+                        
+                        span{
+                            font-weight: 500;
+                            color: #165ab7;
+                        }
+                        
+                    }
+                    
+                    .variant_types{
+                        display: flex;
+                        gap: 9px;
+                        align-items: flex-start;
+
+                        @media #{$smallTab}{
+                            margin-bottom: 20px;
+                            flex-direction: column;
+                        }
+
+                        .types_block{
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 8px;
+                            height: 50px;
+                            overflow: hidden;
+                            transition: .3s all ease;
+
+                            .type{
+                                display: flex;
+                                gap: 0 6px;
+                                align-items: center;
+                                padding: 10px;
+                                cursor: pointer;
+                                border-style: solid;
+                                border-width: 1px;
+                                border-color: #d7edd9;
+                                border-radius: 6px;
+                                background-color: rgb(232, 243, 254);
+                                
+                                @media #{$smallTab}{
+                                    padding: 8px;
+                                }
+                                
+                                img{
+                                    display: inline-flex;
+                                }
+                            }
+
+                            &.show{
+                                height: auto;
+                            }
+
+                            @media #{$smallTab}{
+                                height: 45px;
+                            }
+
+                            @media #{$mobile}{
+                                height: 135px;
+                            }
+
+
+                        }
+                        
+
+                        .show_all{
+                            flex: 0 0 auto;
+                            width: 20%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 145px;
+                            height: 45px;
+                            border: none;
+                            border-radius: 6px;
+                            font-weight: 500;
+                            color: #fff;
+                            background-color: rgb(0, 70, 191);
+                            -webkit-appearance: none;
+                            outline: none;
+                            cursor: pointer;
+                            text-align: center;
+                            padding-right: 15px;
+                            background-image: url(../images/select_arrow_white.png);
+                            background-repeat: no-repeat;
+                            background-position: calc(100% - 15px) center;
+                        }
+                    }
+                }
+
+                .Insurance_price{
+                    display: flex;
+                    flex-direction: column;
+                  
+
+                    .price_title{
+                        font-weight: 400;
+                        font-size: 15px;
+                        color: #afafaf;
+                    }
+
+                    .price{
+                        font-weight: 500;
+                        font-size: 29px;
+                        color: #0046bf;
+                        text-align: center;
+                    }
+
+                }
+            
+            }
+
+            .sport{
+                display: flex;
+                gap: 11px;
+                align-items: center;
+                border: 1px solid #e5ecf8;
+                padding: 19px 0 19px 42px ;
+                border-top: none;
+                border-radius: 10px;
+                input{
+                    cursor: pointer;
+                }
+            }
+                
+        }
+        .choose_block_fixed{
+            display: none;
+            position: fixed;
+            width: 90%;
+            top: 0px;
+            left: 0;
+            right: 0;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            background-color: #feffff;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(245, 245, 245);
+            border-radius: 10px;
+            // background-color: rgba(255, 255, 255, 0.929);
+            background-color: #fff;
+            box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.1);
+            z-index: 55;
+            @media #{$bigTab}{
+                width: 98%;
+            }
+            .fixed_in{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px 30px;
+                width: 100%;
+                @media #{$bigTab}{
+                    padding: 10px 15px;
+                }
+                @media #{$smallMobile}{
+                    // flex-wrap: wrap;
+                    gap: 10px;
+                    padding: 7px 10px;
+                }
+                .ingostrah_logo{
+                    a{
+                        img{
+                            @media #{$bigTab}{
+                                width: 150px;
+                            }
+                            @media #{$mobile}{
+                                width: 120px;
+                            }
+                            @media #{$smallMobile}{
+                                width: 100px;
+                            }
+                        }
+                    }
+                }
+                .insurance_price{
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    @media #{$bigTab}{
+                        gap: 10px;
+                    }
+                    @media #{$mobile}{
+                        gap: 5px;
+                    }
+                    
+                    .price_title{
+                        font-weight: 600;
+                        font-size: 15px;
+                        color: #525657;
+                        @media #{$bigTab}{
+                            font-size: 14px;
+                        }
+                        @media #{$mobile}{
+                            font-size: 13px;
+                        }
+                        @media #{$smallMobile}{
+                            display: none;
+                        }
+                        &.eng_t{
+                            @media #{$smallMobile}{
+                                display: block;
+                            } 
+                        }
+                    }
+                    .price{
+                        font-weight: 700;
+                        font-size: 29px;
+                        color: #f36a4f;
+                        text-align: center;
+                        @media #{$bigTab}{
+                            font-size: 20px;
+                        }
+                        @media #{$mobile}{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+
+        // DETALISTS BLOCK
+
+        .your_details{
+            .traveler_information{
+
+                // travel_one
+                .travel_one, .travel_two{
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    padding: 36px 40px;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color: rgb(245, 245, 245);
+                    border-radius: 10px;
+                    background-color: rgba(255, 255, 255, 0.929);
+                    box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.1);
+
+                    @media #{$mobile}{
+                        padding: 30px;
+                    }
+
+                    .form_title{
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: #34434c;
+                        margin-bottom: 5px;
+
+                        @media #{$smallTab}{
+                            font-size: 17px;
+                        }
+                    }
+
+                    .questions{
+                        display: flex;
+                        font-size: 16px;
+                        color: #666666;
+                        font-weight: 400;
+                        align-items: center;
+                        gap: 8px;
+                        margin-bottom: 20px;
+                    }
+
+                    .travel_info{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        
+
+                        input{
+                            outline: none;
+                            box-shadow: none;
+                            display: flex;
+                            flex: 0 0 auto;
+                            width: calc(33.3333% - 13px);
+                            height: 47px;
+                            border: 1px solid #ddefdd;
+
+                            @media #{$mobile}{
+                                width: 100%;
+
+                                margin-bottom: 9px;
+                            }
+                        }
+                    }
+                }
+
+                .travel_insured{
+                    display: flex;
+                    gap: 5px;
+                    padding: 20px 40px;
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: #34434c;
+
+                    form{
+                    display: flex;
+                    gap: 10px;
+                
+                        input{
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .add_button{
+                    margin-bottom: 63px;
+
+                    @media #{$mobile}{
+                        margin-bottom: 55px;
+                    }
+                    button{
+                        display: flex;
+                        gap: 8px;
+                        align-items: center;
+                        border: none;
+                        border-radius: 6px;
+                        background-color: rgb(22, 90, 183);
+                        padding: 17px 25px;
+                        font-size: 14px;
+                        
+                        color: rgb(255, 255, 255);
+                        line-height: 0;
+                    }
+                }
+
+
+                .Policyholder_data{
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    padding: 36px 40px;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color: rgb(245, 245, 245);
+                    border-radius: 10px;
+                    background-color: rgba(255, 255, 255, 0.929);
+                    box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.1);
+                    margin-bottom: 45px;
+
+                    @media #{$mobile}{
+                        margin-bottom: 30px;
+                        padding: 30px;
+                    }
+
+                    .form_title{
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: #34434c;
+                        margin-bottom: 20px;
+
+                        @media #{$mobile}{
+                            margin-bottom: 17px;
+                            font-size: 17px;
+                        }
+                    }
+
+                    .questions{
+                        display: flex;
+                        font-size: 16px;
+                        color: #666666;
+                        font-weight: 400;
+                        align-items: center;
+                        gap: 8px;
+                        margin-bottom: 20px;
+                    }
+
+                    .travel_info{
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-bottom: 25px;
+                        justify-content: space-between;
+                        gap: 20px 0;
+
+                        input{
+                            outline: none;
+                            box-shadow: none;
+                            display: flex;
+                            flex: 0 0 auto;
+                            width: calc(33.3333% - 13px);
+                            height: 47px;
+
+                            @media #{$mobile}{
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .add_button{
+                        margin-bottom: 4px;
+                    }
+                }
+
+
+            }
+        }
+
+        // buy_insurance
+
+        .buy_insurance_button{
+          margin-bottom: 90px;
+
+            @media #{$smallTab}{
+                margin-bottom: 0;
+            }
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin: 0 auto;
+                padding: 27px 0;
+                border-radius: 6px;
+                background-image: linear-gradient( 97deg, rgb(22,90,183) 0%, rgb(19,58,112) 100%);
+                font-size: 18px;
+                font-weight: 500;
+                color: #ffffff;
+                margin-bottom: 20px;
+                border: 1px solid #165ab7;
+                line-height: 0;
+            }
+
+            .confirmatiom{
+                font-weight: 400;
+                color: #666666;
+                font-size: 14px;
+                
+                color: rgb(102, 102, 102);
+                line-height: 1.286;
+                text-align: center;
+                z-index: 257;
+                    a{
+                        text-decoration: none;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #666666;
+                        border-bottom: 1px solid #666666;
+                
+
+                    }
+                  
+            }
+        
+        }
+    }
+     
+
+    
+}

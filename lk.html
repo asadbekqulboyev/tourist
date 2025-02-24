@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts - Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-dropdown/2.0.3/jquery.dropdown.min.js ">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/kalendar/air-datepicker.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>Личный кабинет</title>
+    
+</head>
+<body>
+
+    <div class="wrapper">
+
+           <!-- main -->
+        <main class="main_lk">
+
+            <!-- header -->
+            <header class="lk_header">
+                <div class="container">
+                    <div class="header_block">
+                        <div class="header_logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo.png" alt="Ингострах" />
+                            </a>
+                        </div>
+                        <!-- location -->
+                        <div class="header_location">
+                            <div class="location dropdown">
+                                <a href="#" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> <img src="assets/images/location-pin.png" alt="" /><span>Германия</span> </a>
+                                <div class="dropdown-menu">
+                                    <div class="drobdown_title">
+                                        Ваша страна Германия? <a href="#"> <img src="assets/images/close.png" alt="" /></a>
+                                    </div>
+                                    <div class="choose_country">
+                                        <button class="my_country">Да</button>
+                                        <!-- Button trigger modal -->
+                                        <button class="another_country" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Другая страна</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- location end-->
+                        <div class="header_contackt">
+                            <div class="language dropdown">
+                                <a href="#ru" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/images/rus_bg.jpg" alt="RUS" />
+                                    <span>RUS</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="open_more" href="en.html">
+                                            <img src="assets/images/eng.png" alt="ENG" />
+                                            ENG
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="phone">
+                                <a href="tel:+74957773557">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 15 15">
+                                        <image
+                                            id="phone-call_6_"
+                                            data-name="phone-call (6)"
+                                            width="15"
+                                            height="15"
+                                            xlink:href="data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAA6klEQVQokY2SoW5CQRBFL0xwOCzBg63A1zakng+oeEmTagSkokHU9QdqSapaAYJ/6A/gKpoUW8nZPLIv+xresg17k2vuzplkZlZlWQpYAmVwz2c59uDdCei9zYVbHtC5bsxsncgb+g/+NLOrS3A7kf1Ier4E1vBvlL2a2SoXfoqyaQ5YKZxqH238I+tUAR5HsPcb0A3vt8AKmJzBoeA+0eAbeImyd2BQ3bnqEOSce5Q0z5j2IKlonMrMFpIeMuCOpGFyEcA1sEuMUXvZmDnRwIAZ8BWBxd/fPp05JedcX9JE0kjS2sw2VZ2kIwvof6ZnCZrHAAAAAElFTkSuQmCC"
+                                        ></image>
+                                    </svg>
+                                </a>
+                            </div>
+                            <a class="lk_btn mini" href="index.html">
+                                <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M406.5 399.6C387.4 352.9 341.5 320 288 320l-64 0c-53.5 0-99.4 32.9-118.5 79.6C69.9 362.2 48 311.7 48 256C48 141.1 141.1 48 256 48s208 93.1 208 208c0 55.7-21.9 106.2-57.5 143.6zm-40.1 32.7C334.4 452.4 296.6 464 256 464s-78.4-11.6-110.5-31.7c7.3-36.7 39.7-64.3 78.5-64.3l64 0c38.8 0 71.2 27.6 78.5 64.3zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-272a40 40 0 1 1 0-80 40 40 0 1 1 0 80zm-88-40a88 88 0 1 0 176 0 88 88 0 1 0 -176 0z" fill="#fff"/></svg>
+                                    </span>
+                                <p>Выйти из ЛК</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- header end-->
+            <div class="container">
+                <ul class="axil-breadcrumb">
+                    <li class="axil-breadcrumb-item"><a href="index.html">Главная</a></li>
+                    <li class="separator">/</li>
+                    <li class="axil-breadcrumb-item active">Личный кабинет</li>
+                </ul>
+            </div>
+            <section class="your_policies">
+                <div class="container">
+                    <div class="big_title">Здравствуйте, Александр!</div>
+                    <div class="subtitle_lk">
+                        В данном разделе хранятся все Ваши полисы. Также, в целях безопасности Вы можете изменить пароль для входа.
+                    </div>
+                    <div class="mini_title">Ваши полисы</div>
+                    <div class="your_policies_block">
+                        <ul class="your_policies_ul">
+                            <li class="your_policies_li">
+                                <p class="your_policies_li_title">Страховой полис</p>
+                                <span class="your_policies_li_sp">№ AMR125458</span>
+                            </li>
+                            <li class="your_policies_li">
+                                <p class="your_policies_li_title">Фамилия и Имя покупателя:</p>
+                                <span class="your_policies_li_sp">Suchkou Aliaksandr</span>
+                            </li>
+                            <li class="your_policies_li">
+                                <p class="your_policies_li_title">Дата рождения покупателя:</p>
+                                <span class="your_policies_li_sp">04/12/1992</span>
+                            </li>
+                            <li class="your_policies_li">
+                                <p class="your_policies_li_title">Дата покупки полиса:</p>
+                                <span class="your_policies_li_sp">04/04/2024</span>
+                            </li>
+                            <li class="your_policies_li">
+                                <a href="#">
+                                    <div class="pdf_ic">
+                                        <?xml version="1.0" ?><svg height="32" id="icon" fill="#f36052" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><defs><style>
+                                            .cls-1 {
+                                              fill: none;
+                                            }
+                                          </style></defs><title/><polygon points="30 18 30 16 24 16 24 26 26 26 26 22 29 22 29 20 26 20 26 18 30 18"/><path d="M19,26H15V16h4a3.0033,3.0033,0,0,1,3,3v4A3.0033,3.0033,0,0,1,19,26Zm-2-2h2a1.0011,1.0011,0,0,0,1-1V19a1.0011,1.0011,0,0,0-1-1H17Z"/><path d="M11,16H6V26H8V23h3a2.0027,2.0027,0,0,0,2-2V18A2.0023,2.0023,0,0,0,11,16ZM8,21V18h3l.001,3Z"/><path d="M22,14V10a.9092.9092,0,0,0-.3-.7l-7-7A.9087.9087,0,0,0,14,2H4A2.0059,2.0059,0,0,0,2,4V28a2,2,0,0,0,2,2H20V28H4V4h8v6a2.0059,2.0059,0,0,0,2,2h6v2Zm-8-4V4.4L19.6,10Z"/><rect class="cls-1" data-name="&lt;Transparent Rectangle&gt;" height="32" id="_Transparent_Rectangle_" width="32"/></svg>
+                                    </div>
+                                    <span class="your_policies_down">Скачать полись</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="your_policies_ul">
+                            <li class="your_policies_li">
+                                <p class="your_policies_li_title">Страховой полис</p>
+                                <span class="your_policies_li_sp">№ AMR125458</span>
+                            </li>
+                            <li class="your_policies_li">
+                                <p class="your_policies_li_title">Фамилия и Имя покупателя:</p>
+                                <span class="your_policies_li_sp">Suchkou Aliaksandr</span>
+                            </li>
+                            <li class="your_policies_li">
+                                <p class="your_policies_li_title">Дата рождения покупателя:</p>
+                                <span class="your_policies_li_sp">04/12/1992</span>
+                            </li>
+                            <li class="your_policies_li">
+                                <p class="your_policies_li_title">Дата покупки полиса:</p>
+                                <span class="your_policies_li_sp">04/04/2024</span>
+                            </li>
+                            <li class="your_policies_li">
+                                <a href="#">
+                                    <div class="pdf_ic">
+                                        <?xml version="1.0" ?><svg height="32" id="icon" fill="#f36052" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><defs><style>
+                                            .cls-1 {
+                                              fill: none;
+                                            }
+                                          </style></defs><title/><polygon points="30 18 30 16 24 16 24 26 26 26 26 22 29 22 29 20 26 20 26 18 30 18"/><path d="M19,26H15V16h4a3.0033,3.0033,0,0,1,3,3v4A3.0033,3.0033,0,0,1,19,26Zm-2-2h2a1.0011,1.0011,0,0,0,1-1V19a1.0011,1.0011,0,0,0-1-1H17Z"/><path d="M11,16H6V26H8V23h3a2.0027,2.0027,0,0,0,2-2V18A2.0023,2.0023,0,0,0,11,16ZM8,21V18h3l.001,3Z"/><path d="M22,14V10a.9092.9092,0,0,0-.3-.7l-7-7A.9087.9087,0,0,0,14,2H4A2.0059,2.0059,0,0,0,2,4V28a2,2,0,0,0,2,2H20V28H4V4h8v6a2.0059,2.0059,0,0,0,2,2h6v2Zm-8-4V4.4L19.6,10Z"/><rect class="cls-1" data-name="&lt;Transparent Rectangle&gt;" height="32" id="_Transparent_Rectangle_" width="32"/></svg>
+                                    </div>
+                                    <span class="your_policies_down">Скачать полись</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="your_policies_btn">Показать все (5)</a>
+                </div>
+            </section>
+            
+            <section class="change_password">
+                <div class="container">
+                    <div class="change_password_block">
+                        <div class="mini_title">Изменить пароль</div>
+                        <form class="change_password_form">
+                            <input type="password" class="change_password_input" placeholder="Текущий пароль">
+                            <input type="password" class="change_password_input" placeholder="Новый пароль">
+                            <button class="change_password_btn">Сохранить изменения</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+ 
+        </main>
+        
+          
+
+          <!-- footer -->
+          <footer>
+            <div class="container">
+                <div class="footer_block">
+                    <div class="attollo_assistance">
+                        <div class="assistance_logo">
+                            <a href="/"><img src="assets/images/footer_logo.png" alt="Аттолло Ассистанс" /></a>
+                        </div>
+                        <div class="">
+                            СК «Солидарность» <br>
+<span>страхование жизни и здоровья</span>
+                        </div>
+                    </div>
+                    <div class="contack_block">
+                        <div class="footer_contact">
+                            <div class="contact_img">
+                                <img src="assets/images/pay_logo.png" class="img-fluid" alt="" />
+                            </div>
+                            <div class="contact_img">
+                                <a href="tel:+74951335555">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 15 15">
+                                        <image id="phone-call_6_" data-name="phone-call (6)" width="15" height="15" xlink:href="data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAA6klEQVQokY2SoW5CQRBFL0xwOCzBg63A1zakng+oeEmTagSkokHU9QdqSapaAYJ/6A/gKpoUW8nZPLIv+xresg17k2vuzplkZlZlWQpYAmVwz2c59uDdCei9zYVbHtC5bsxsncgb+g/+NLOrS3A7kf1Ier4E1vBvlL2a2SoXfoqyaQ5YKZxqH238I+tUAR5HsPcb0A3vt8AKmJzBoeA+0eAbeImyd2BQ3bnqEOSce5Q0z5j2IKlonMrMFpIeMuCOpGFyEcA1sEuMUXvZmDnRwIAZ8BWBxd/fPp05JedcX9JE0kjS2sw2VZ2kIwvof6ZnCZrHAAAAAElFTkSuQmCC"></image>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="number_phone_email">
+                                <div class="phone">
+                                    <a href="tel:+8495133-55-55">8 (495) 133-55-55</a>
+                                </div>
+                                <div class="email">
+                                    <a href="mailto:info@solidsk.ru.com">info@solidsk.ru</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile_title">
+                        <div class="assistanse_title">
+                            Аттолло Ассистанс официальный <br />
+                            представитель<br />
+                            СПАО "Ингосстрах"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end-->
+
+
+    
+  
+         <!-- Modal -->
+         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="close">
+                        <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                            
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h1 class="modal-title" id="staticBackdropLabel">Ваша страна</h1>
+                        <div class="countrys">
+                            <ul>
+                                <li>
+                                    <a href="" class="country-item" data-id="110"> Австрия </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="224"> Беларусь </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="138"> Бельгия </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="102"> Болгария </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="297"> Великобритания </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="95"> Венгрия </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="137"> Германия </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="96"> Греция </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="213"> Индия </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="227"> Испания </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="139"> Италия </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="" class="country-item" data-id="141"> Канада </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="223"> Кипр </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="106"> Латвия </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="289"> Литва </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="193"> Нидерланды </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="301"> ОАЭ </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="171"> Польша </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="265"> Португалия </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="249"> Румыния </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="92"> Сингапур </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="293"> Сирия </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="" class="country-item" data-id="115"> США </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="260"> Таиланд </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="307"> Турция </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="282"> Финляндия </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="257"> Франция </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="212"> Хорватия </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="124"> Чехия </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="244"> Швейцария </a>
+                                </li>
+                                <li>
+                                    <a href="" class="country-item" data-id="285"> Эстония </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="assets/kalendar/air-datepicker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/jquery.inputmask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/JS/main.js"></script>
+</body>
+</html>

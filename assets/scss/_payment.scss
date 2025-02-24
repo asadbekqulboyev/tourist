@@ -1,0 +1,117 @@
+.payment_block{
+
+    .section_title_payment{
+   
+        font-size: 50px;
+        font-weight: 800;
+        color: #34434c;
+        max-width: 550px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        
+
+            @media #{$smallTab}{
+                font-size: 40px;
+            }
+
+            @media #{$mobile}{
+                font-size: 27PX;
+            }
+    }
+
+    .Payment_description{
+        font-size: 18px;
+        font-weight: 400;
+        color: #34434c;
+        margin-bottom: 30px;
+       
+        line-height: 1.5;
+  
+    }
+
+    .choose_payment{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 20px 53px 20px;
+        gap: 15px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(245, 245, 245);
+        border-radius: 10px;
+        background-color: #f5f5f5;
+        box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.1);
+        width: 50%;
+        margin: 0 auto;
+    
+            @media #{$bigTab}{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                
+            }
+
+            @media #{$smallTab}{
+                width: 100%;
+            }
+
+            @media #{$mobile}{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                width: auto;
+            }
+
+      
+       .Russian_map_jar, .Other_bank_card{
+            display: flex;
+            text-align: start;
+            flex-wrap: wrap;
+            padding: 20px;
+            font-size: 16px;
+            color: #666666;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(235, 236, 238);
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.06);
+            width: calc(100% - 8px);
+         
+          
+
+       }
+    }
+
+
+ 
+}
+
+.Continue{
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 78px;
+    border-radius: 42px;
+    border: none;
+    background-color: #375ab3;
+    text-align: center;
+    font-size: 16px ;
+    font-weight: 500;
+    color: #ffffff;
+    position: relative;
+    top: -30px; 
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(190, 190, 190);
+    background-color: rgb(55, 90, 179);
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.06);
+  
+}
