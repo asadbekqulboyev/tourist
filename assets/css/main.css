@@ -481,7 +481,13 @@
 }
 
 header .header_block .header_contackt {
-  gap: 5px;
+  gap: 25px;
+}
+@media (max-width: 576px) {
+  header .header_block .header_contackt {
+    justify-content: flex-end;
+    gap: 8px;
+  }
 }
 header .header_block .header_logo a img {
   width: 150px;
@@ -885,6 +891,10 @@ li {
   -ms-user-select: none;
   user-select: none;
 }
+.input_check span {
+  font-size: 15px;
+  font-weight: 600;
+}
 .input_check input {
   position: absolute;
   opacity: 0;
@@ -950,7 +960,6 @@ li {
 }
 
 .header_contackt {
-  /* Dropdown button on hover & focus */
   /* Dropdown Content (Hidden by Default) */
   /* Links inside the dropdown */
   /* Change color of dropdown links on hover */
@@ -1286,6 +1295,91 @@ li {
 
 .buy_insurance_button {
   position: relative;
+}
+
+footer.footer .phones {
+  background-image: -webkit-linear-gradient(90deg, rgb(243, 118, 75) 0%, rgb(243, 75, 88) 100%);
+}
+@media (max-width: 576px) {
+  footer.footer .phones {
+    margin-bottom: 10px;
+  }
+}
+footer.footer .img-fluid {
+  margin-right: 20px;
+}
+@media (max-width: 576px) {
+  footer.footer .img-fluid {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 576px) {
+  footer.footer .phone {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  footer.footer .footer_block {
+    padding-bottom: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  footer.footer .footer_block .footer_contact {
+    gap: 0;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 576px) {
+  footer.footer .footer_block .contack_block {
+    width: 100%;
+  }
+}
+footer.footer .footer_block .footer_contact .number_phone_email .email a {
+  color: #f34a58;
+}
+@media (max-width: 576px) {
+  footer.footer .footer_block .footer_contact .number_phone_email {
+    width: 100%;
+    border-bottom: 1px solid #3d3d3d;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 576px) {
+  footer.footer .footer_block .footer_contact .number_phone_email .email {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  footer.footer .mobile_nones {
+    display: none;
+  }
+}
+footer.footer .mobile_title {
+  text-decoration: underline;
+  display: none;
+}
+@media (max-width: 576px) {
+  footer.footer .mobile_title {
+    display: block;
+    padding: 18px 0;
+    font-weight: 700;
+    background: #2d2d2d;
+    text-align: center;
+    color: #fff;
+  }
+  footer.footer .mobile_title span {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+@media (max-width: 576px) {
+  footer.footer .contact_img:nth-child(1) {
+    border-top: 1px solid #383838;
+    order: 5;
+    padding: 10px 0 14px;
+  }
 }
 
 .buy_insurance.active .your_Insurance .choose_block_fixed {
@@ -1881,6 +1975,7 @@ li {
   .payment_block .choose_payment .Russian_map_jar,
   .payment_block .choose_payment .Other_bank_card {
     width: 100%;
+    padding: 15px;
   }
 }
 .payment_block .choose_payment .check_info {

@@ -410,7 +410,11 @@ header.lk_header{
 }
 header{
     .header_block .header_contackt{
-        gap: 5px;
+        gap: 25px;
+        @media #{$mobile} {
+            justify-content: flex-end;
+            gap: 8px;
+        }
     }
     .header_block .header_logo a img{
         width: 150px;
