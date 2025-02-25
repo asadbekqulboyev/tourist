@@ -15,7 +15,7 @@
     <body>
         <div class="wrapper eng_wr">
             <div id="panel"></div>
-            <main>
+            <main class="thanks">
                 <!-- header -->
                 <header>
                     <div class="container">
@@ -84,52 +84,39 @@
                 <!-- section Insurance -->
                 <div class="visa_Insurance pay">
                     <div class="container">
+                        <div class="img_check">
+                            <img src="./assets/images/check (1).png" alt="">
+                        </div>
                 <form action="/pay/" method="post" id="payForm">
                     <input type="hidden" name="sessid" id="sessid" value="5e4af20fbeed2935e434afdb2d035105">	    <input type="hidden" name="orderID" value="4137">
                     <input type="hidden" name="pay" value="yes">
                     <input type="hidden" name="payOrderID" value="4137">
                     <div class="payment_block">
-                        <div class="section_title_payment">Оплата</div>
-                        <div class="Payment_description">Пожалуйста, выберите вариант оплаты чтобы продолжить</div>
+                        <div class="section_title_payment">
+                            Спасибо что выбрали
+                            наш сервис! 
+                        </div>
+                        <div class="Payment_description">В течение 30 минут на вашу на почту поступит письмо, в котором содержится ссылка на оплату. После оплаты мы вышлем Ваши документы на указанную почту в течении часа.</div>
                         <div class="choose_block">
                             <!-- choose_payment -->
-                            <div class="choose_payment">
-                                <div class="bg"></div>
-                                <div class="info">
-                                    <div class="info_text">
-                                        The link for payment of any 
-                                        <a href=""> foreign bank card  (exсept Russian banks) </a> 
-                                        will be sent within <b>30 minutes</b>30  to your email. After the payment we will send you documents within an hour
-                                    </div>
-                                </div>
-                                <!-- Russian map jar -->
-                                <div class="Russian_map_jar">
-                                    <img src="assets/images/information-button.png" alt="" class="check_info">
-                                    <label class="input_check">
-                                        <input type="radio" checked="" name="pay_card" value="russia">
-                                        Off line pay<br> <b>со скидкой 5%</b>
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <!-- Other_bank_card -->
-                                <div class="Other_bank_card">
-                                    <label class="input_check">
-                                        <input type="radio" name="pay_card" value="foreign">
-                                        Оплата картой любой страны
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="Other_bank_card">
-                                    <label class="input_check">
-                                        <input type="radio" name="pay_card" value="foreign">
-                                        Карта Российского
-                                        банка <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                               </div>
-                        </div>
+                             <div class="contanct_title">
+                                Если письмо не пришло, Вы можете обратиться в службу поддержки:
+                             </div>
+                             <ul class="contact_btn_lists">
+                                <li>
+                                <a href="mailtu:support@attolloassistance.com">
+                                    <img src="assets/images/email.png" alt="">
+                                    <span>support@attolloassistance.com</span>
+                                </a>
+                               </li>
+                                <li>
+                                    <a href="tel:+74957773557"><img src="assets/images/phone-calls.png" alt=""> +7 (495) 777-35-57</a>
+                                </li>
+                             </ul>
+                         </div> 
+
+                     </div>
                     </div>
-                    <button class="Continue" type="submit">Продолжить</button>
                     </form>
                 </div>
                 </div>
