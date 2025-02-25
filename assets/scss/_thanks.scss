@@ -120,6 +120,10 @@
             gap: 10px;
             position: relative;
             z-index: 2;
+            transition: all .2s linear;
+            &:hover{
+                transform: scale(.96);
+            }
             @media #{$mobile} {
                 padding: 14px 20px;
                 font-size: 14px;

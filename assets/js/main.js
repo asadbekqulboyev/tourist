@@ -609,6 +609,9 @@ $(document).ready(function () {
     $('.latin_letter').bind('keyup',function(){
         $(this).val($(this).val().replace(/[^a-z ]/i, ""))
     });
+    $("input[type='tel']").inputmask("+99999 9999999", {
+        // clearMaskOnLostFocus: false
+      });
 });
 
 function setCookie(cName, cValue, expDays) {

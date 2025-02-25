@@ -2078,6 +2078,10 @@ footer.footer .mobile_title {
   border-color: rgb(190, 190, 190);
   background-color: rgb(55, 90, 179);
   box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s linear;
+}
+.Continue:hover {
+  transform: scale(0.96);
 }
 
 .thanks .img_check img {
@@ -2212,6 +2216,10 @@ footer.footer .mobile_title {
   gap: 10px;
   position: relative;
   z-index: 2;
+  transition: all 0.2s linear;
+}
+.thanks .contact_btn_lists a:hover {
+  transform: scale(0.96);
 }
 @media (max-width: 576px) {
   .thanks .contact_btn_lists a {
