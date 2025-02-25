@@ -894,7 +894,7 @@ li {
 }
 .input_check .checkmark {
   position: absolute;
-  top: 0;
+  top: 2px !important;
   bottom: 0;
   margin: auto;
   left: 0;
@@ -916,6 +916,7 @@ li {
 }
 .input_checkinput:checked ~ .checkmark {
   background-color: #2196F3;
+  border-color: #f25461;
 }
 .input_check .checkmark:after {
   content: "";
@@ -924,12 +925,13 @@ li {
 }
 .input_check input:checked ~ .checkmark:after {
   display: block;
+  border-color: #f36b53;
 }
 .input_check input:checked ~ .checkmark {
   border-style: solid;
   border-width: 1px;
   background-color: rgb(255, 255, 255);
-  border-color: rgb(55, 90, 179);
+  border-color: #f25461;
   border-radius: 2px;
 }
 .input_check .checkmark:after {
@@ -1779,7 +1781,7 @@ li {
 .payment_block .section_title_payment {
   font-size: 50px;
   font-weight: 800;
-  color: #34434c;
+  color: #fff;
   max-width: 550px;
   display: flex;
   justify-content: center;
@@ -1800,7 +1802,7 @@ li {
 .payment_block .Payment_description {
   font-size: 18px;
   font-weight: 400;
-  color: #34434c;
+  color: #fff;
   margin-bottom: 30px;
   line-height: 1.5;
 }
@@ -1818,9 +1820,21 @@ li {
   box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.1);
   width: 50%;
   margin: 0 auto;
+  flex-wrap: wrap;
+}
+@media (max-width: 1200px) {
+  .payment_block .choose_payment {
+    width: 60%;
+  }
+}
+@media (max-width: 1024px) {
+  .payment_block .choose_payment {
+    width: 70%;
+  }
 }
 @media (max-width: 992px) {
   .payment_block .choose_payment {
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1839,9 +1853,15 @@ li {
     justify-content: center;
     align-items: center;
     width: auto;
+    flex-direction: column;
   }
 }
-.payment_block .choose_payment .Russian_map_jar, .payment_block .choose_payment .Other_bank_card {
+.payment_block .choose_payment .Russian_map_jar {
+  position: relative;
+  z-index: 3;
+}
+.payment_block .choose_payment .Russian_map_jar,
+.payment_block .choose_payment .Other_bank_card {
   display: flex;
   text-align: start;
   flex-wrap: wrap;
@@ -1854,7 +1874,91 @@ li {
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.06);
-  width: calc(100% - 8px);
+  width: calc(50% - 8px);
+  box-shadow: 0 0 19px rgba(93, 93, 93, 0.22);
+}
+@media (max-width: 576px) {
+  .payment_block .choose_payment .Russian_map_jar,
+  .payment_block .choose_payment .Other_bank_card {
+    width: 100%;
+  }
+}
+.payment_block .choose_payment .check_info {
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  cursor: pointer;
+}
+.payment_block .choose_payment .info {
+  position: absolute;
+  width: 315px;
+  z-index: 22;
+  top: 10px;
+}
+.payment_block .choose_payment .info .info_text {
+  width: 275px;
+  border: 1px solid #fef0f1;
+  background: #fff;
+  border-radius: 12px;
+  position: absolute;
+  font-size: 13px;
+  line-height: 18px;
+  color: #212529;
+  padding: 14px 18px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #212529;
+  text-align: left;
+  left: 50%;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.2s linear;
+}
+@media (max-width: 576px) {
+  .payment_block .choose_payment .info .info_text {
+    left: 10px;
+    top: 46px;
+    width: 100%;
+  }
+}
+.payment_block .choose_payment .info .info_text.active {
+  opacity: 1;
+  transform: scale(1);
+}
+.payment_block .choose_payment .info .info_text::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: -7px;
+  top: 27px;
+  transform: rotate(45deg);
+  background: #fff;
+}
+@media (max-width: 576px) {
+  .payment_block .choose_payment .info .info_text::before {
+    left: auto;
+    right: 24px;
+    top: -7px;
+  }
+}
+.payment_block .choose_payment .info .info_text a {
+  color: #e30613;
+  font-weight: 500;
+  text-decoration: none;
+}
+@media (max-width: 576px) {
+  .payment_block .choose_payment .info {
+    width: calc(100% - 20px);
+    left: 0;
+  }
+}
+@media (max-width: 576px) {
+  .payment_block .bg::after {
+    right: -143px;
+    top: 34px;
+  }
 }
 
 .Continue {

@@ -10,8 +10,8 @@
         <title>Солидарность</title>
         <link rel="shortcut icon" href="https://www.attolloassistance.shop/favicon.ico" type="image/x-icon" />
         <link rel="icon" type="image/x-icon" href="https://www.attolloassistance.shop/favicon.ico" />
-        <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="assets/css/index.css" />
+        <link rel="stylesheet" href="./assets/css/main.css">
     </head>
     <body>
         <div class="wrapper">
@@ -86,7 +86,7 @@
                 <div class="visa_Insurance pay">
                     <div class="container">
                         
-                        <form action="/pay/" method="post" id="payForm">
+                    <form action="/pay/" method="post" id="payForm">
                     <input type="hidden" name="sessid" id="sessid" value="5e4af20fbeed2935e434afdb2d035105">	    <input type="hidden" name="orderID" value="4137">
                         <input type="hidden" name="pay" value="yes">
                     <input type="hidden" name="payOrderID" value="4137">
@@ -101,17 +101,26 @@
                                 <div class="Russian_map_jar">
                                     <label class="input_check">
                                         <input type="radio" checked="" name="pay_card" value="russia">
-                                        Карта Российского банка						<span class="checkmark"></span>
+                                        Карта Российского банка
+                                        <span class="checkmark"></span>
                                     </label>
                                 </div>
-                                                <!-- Other_bank_card -->
+                                <!-- Other_bank_card -->
                                 <div class="Other_bank_card">
                                     <label class="input_check">
                                         <input type="radio" name="pay_card" value="foreign">
-                                                                Оплата картой любой страны						<span class="checkmark"></span>
+                                        Оплата картой любой страны
+                                        <span class="checkmark"></span>
                                     </label>
                                 </div>
-                                            </div>
+                                <div class="Other_bank_card">
+                                    <label class="input_check">
+                                        <input type="radio" name="pay_card" value="foreign">
+                                        Оплата картой любой страны
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                               </div>
                         </div>
                     </div>
                     <button class="Continue" type="submit">Продолжить</button>

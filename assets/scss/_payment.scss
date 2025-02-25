@@ -1,38 +1,37 @@
-.payment_block{
+.payment_block {
 
-    .section_title_payment{
-   
+    .section_title_payment {
+
         font-size: 50px;
         font-weight: 800;
-        color: #34434c;
+        color: #fff;
         max-width: 550px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         margin: 0 auto;
-        
 
-            @media #{$smallTab}{
-                font-size: 40px;
-            }
 
-            @media #{$mobile}{
-                font-size: 27PX;
-            }
+        @media #{$smallTab} {
+            font-size: 40px;
+        }
+
+        @media #{$mobile} {
+            font-size: 27PX;
+        }
     }
 
-    .Payment_description{
+    .Payment_description {
         font-size: 18px;
         font-weight: 400;
-        color: #34434c;
+        color: #fff;
         margin-bottom: 30px;
-       
         line-height: 1.5;
-  
+
     }
 
-    .choose_payment{
+    .choose_payment {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -46,29 +45,39 @@
         box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.1);
         width: 50%;
         margin: 0 auto;
-    
-            @media #{$bigTab}{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                
-            }
+        flex-wrap: wrap;
+        @media #{$smallLaptop} {
+            width: 60%;
+        }
+        @media #{$tab} {
+            width: 70%;
+        }
+        @media #{$bigTab} {
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
 
-            @media #{$smallTab}{
-                width: 100%;
-            }
+        @media #{$smallTab} {
+            width: 100%;
+        }
 
-            @media #{$mobile}{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                width: auto;
-            }
-
-      
-       .Russian_map_jar, .Other_bank_card{
+        @media #{$mobile} {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            flex-direction: column;
+        }
+        .Russian_map_jar{
+            position: relative;
+            z-index: 3;
+        }
+        .Russian_map_jar,
+        .Other_bank_card {
             display: flex;
             text-align: start;
             flex-wrap: wrap;
@@ -81,18 +90,90 @@
             border-radius: 8px;
             background-color: #fff;
             box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.06);
-            width: calc(100% - 8px);
-         
-          
+            width: calc(50% - 8px);
+            box-shadow:0 0 19px rgba(93,93,93,0.22);
+            @media #{$mobile} {
+                width: 100%;
+            }
+        }
 
-       }
+        .check_info {
+            position: absolute;
+            right: 10px;
+            top: 14px;
+            cursor: pointer;
+            
+        }
+
+        .info {
+            position: absolute;
+            width: 315px;
+            z-index: 22;
+            top: 10px;
+            .info_text {
+                width: 275px;
+                border: 1px solid #fef0f1;
+                background: #fff;
+                border-radius: 12px;
+                position:absolute;
+                font-size: 13px;
+                line-height: 18px;
+                color: #212529;
+                padding: 14px 18px;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 18px;
+                color: #212529;
+                text-align: left;
+                left: 50%;
+                opacity: 0;
+                transform: scale(0);
+                transition: all .2s linear;
+                @media #{$mobile} {
+                    left: 10px;
+                    top: 46px;
+                    width: 100%;
+                }
+                &.active{
+                    opacity: 1;
+                    transform: scale(1);
+                }
+                &::before {
+                    content: '';
+                    width: 13px;
+                    height: 13px;
+                    position: absolute;
+                    left: -7px;
+                    top: 27px;
+                    transform: rotate(45deg);
+                    background: #fff;
+                    @media #{$mobile} {
+                        left: auto;
+                        right: 24px;
+                        top: -7px;
+                    }
+                }
+                a {
+                    color: #e30613;
+                    font-weight: 500;
+                    text-decoration: none;
+                }
+            }
+            @media #{$mobile} {
+                width: calc(100% - 20px);
+                left: 0;
+            }
+        }
     }
-
-
- 
+    .bg::after{
+        @media #{$mobile} {
+            right: -143px;
+            top: 34px;
+        }
+    }
 }
 
-.Continue{
+.Continue {
     bottom: 0;
     display: flex;
     justify-content: center;
@@ -102,16 +183,16 @@
     border: none;
     background-color: #375ab3;
     text-align: center;
-    font-size: 16px ;
+    font-size: 16px;
     font-weight: 500;
     color: #ffffff;
     position: relative;
-    top: -30px; 
+    top: -30px;
     margin: 0 auto;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(190, 190, 190);
     background-color: rgb(55, 90, 179);
     box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.06);
-  
+
 }

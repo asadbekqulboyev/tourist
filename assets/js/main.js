@@ -69,26 +69,16 @@ $(document).ready(function () {
            modal_open_recovery.classList.remove('show');
            overlay_recovery.classList.remove('show');
        })
-      
-      
-    
-    
-    
-    
-    
        // MODAL - ПРОВЕРЬТЕ ПОЧТУ
        let modal_opener_checking = document.querySelectorAll('.checking_btn');
        let modal_open_checking = document.querySelector('.checking_modal');
        let modal_close_checking = document.querySelector('.checking_modal .closeModalBtn');
        let overlay_checking = document.querySelector('.overlay');
-     
-     
        modal_close_checking.addEventListener('click',function(e){
         e.preventDefault();
         modal_open_checking.classList.remove('show');
         overlay_checking.classList.remove('show');
       })
-    
        checking_btn.addEventListener('click', function(e) {
           e.preventDefault()
           let emailInputChecking = document.getElementById('email_1');
@@ -102,7 +92,25 @@ $(document).ready(function () {
             // recovery_form.submit();   
           }
       });
-    
+    // info
+    let info = $('.check_info');
+    let info_text = $('.info_text');
+    info.hover(
+        function () {
+            info_text.addClass('active');
+        }, 
+        function () {
+            info_text.removeClass('active');
+        }
+    ),
+    info_text.hover(
+        function () {
+            info_text.addClass('active');
+        }, 
+        function () {
+            info_text.removeClass('active');
+        }
+       ),
     //   fixed price
       window.addEventListener('scroll', () => {
         let reveals = document.querySelectorAll('.reveal')
@@ -121,8 +129,6 @@ $(document).ready(function () {
             }
         }
       })
-
-
 
     const today = new Date();
     const quantityAlert = W_LANG_EN ? 'Quantity exceeded' : 'Превышено количество';

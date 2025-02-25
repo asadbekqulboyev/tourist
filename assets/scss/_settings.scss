@@ -183,7 +183,7 @@ body {
       
   .checkmark {
     position: absolute;
-    top: 0;
+    top:2px !important;
     bottom: 0;
     margin: auto;
     left: 0;
@@ -206,7 +206,7 @@ body {
 
   &input:checked ~ .checkmark {
     background-color: #2196F3;
-  
+    border-color: #f25461;
 
   }
 
@@ -219,13 +219,14 @@ body {
 
   input:checked ~ .checkmark:after {
     display: block;
+    border-color: #f36b53;
   }
 
   input:checked ~ .checkmark{
     border-style: solid;
     border-width: 1px;
     background-color: rgb(255, 255, 255);
-    border-color: rgb(55, 90, 179);
+    border-color: #f25461;
     border-radius: 2px;
   }
 

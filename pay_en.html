@@ -10,8 +10,8 @@
         <title>Solidarity</title>
         <link rel="shortcut icon" href="https://www.attolloassistance.shop/favicon.ico" type="image/x-icon" />
         <link rel="icon" type="image/x-icon" href="https://www.attolloassistance.shop/favicon.ico" />
-        <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="assets/css/index.css" />
+        <link rel="stylesheet" href="assets/css/main.css">
     </head>
     <body>
         <div class="wrapper eng_wr">
@@ -85,39 +85,55 @@
                 <!-- section Insurance -->
                 <div class="visa_Insurance pay">
                     <div class="container">
-                        
-                        <form action="/pay/" method="post" id="payForm">
-                    <input type="hidden" name="sessid" id="sessid" value="5e4af20fbeed2935e434afdb2d035105">	    <input type="hidden" name="orderID" value="4137">
+                    <form action="/pay/" method="post" id="payForm">
+                    <input type="hidden" name="sessid" id="sessid" value="5e4af20fbeed2935e434afdb2d035105">
+                    <input type="hidden" name="orderID" value="4137">
                         <input type="hidden" name="pay" value="yes">
                     <input type="hidden" name="payOrderID" value="4137">
                     <div class="payment_block">
-                        <div class="section_title_payment">Pay</div>
-                        <div class="Payment_description">Please choose variant of card for payment</div>
+                        <div class="section_title_payment">Payment</div>
+                        <div class="Payment_description">Please choose payment variant to continue
+                        </div>
                         <div class="choose_block">
                             <!-- choose_payment -->
                             <div class="choose_payment">
                                 <div class="bg"></div>
                                 <!-- Russian map jar -->
+                                <div class="info">
+                                    <div class="info_text">
+                                        The link for payment of any 
+                                        <a href=""> foreign bank card  (exсept Russian banks) </a> 
+                                        will be sent within <b>30 minutes</b>30  to your email. After the payment we will send you documents within an hour
+                                    </div>
+                                </div>
                                 <div class="Russian_map_jar">
+                                    <img src="assets/images/information-button.png" alt="" class="check_info">
                                     <label class="input_check">
                                         <input type="radio" checked="" name="pay_card" value="russia">
-                                        Russian bank card					<span class="checkmark"></span>
+                                        Offline payment <br>
+                                        <b>with 5% discount</b>
+                                    <span class="checkmark"></span>
                                     </label>
                                 </div>
-                                                <!-- Other_bank_card -->
+                                <!-- Other_bank_card -->
                                 <div class="Other_bank_card">
                                     <label class="input_check">
-                                        <input type="radio" name="pay_card" value="foreign">
-                                        Foreign bank card				<span class="checkmark"></span>
+                                    <input type="radio" name="pay_card" value="foreign">
+                                    Payment with foreign bank cad<span class="checkmark"></span>
                                     </label>
                                 </div>
-                                            </div>
+                                <div class="Other_bank_card">
+                                    <label class="input_check">
+                                    <input type="radio" name="pay_card" value="foreign">
+                                    Russian bank card<span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <button class="Continue" type="submit">Buy</button>
+                    <button class="Continue" type="submit">Continue</button>
                 </form>
-                
-                    </div>
+                </div>
                 </div>
                 <!-- section Insurance end-->
             </main>
@@ -310,7 +326,7 @@
                                             Estonia                                        </a>
                                     </li>
 									                                </ul>
-								                            </div>
+							</div>
                         </div>
                     </div>
                 </div>
