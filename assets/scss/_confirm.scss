@@ -139,6 +139,7 @@
         padding:24px 60px ;
         border-width: 0;
         transition: all .2s linear;
+        min-width: 254px;
         &:hover{
             transform: scale(.96);
         }
@@ -190,5 +191,10 @@
         -webkit-mask-composite: xor;
         mask-composite: exclude;
         z-index: 1;
+    }
+}
+.conf2{
+    button.edit::before {
+        content: "CORRECT DATA";
     }
 }

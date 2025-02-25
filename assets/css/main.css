@@ -2364,6 +2364,7 @@ footer.footer .mobile_title {
   padding: 24px 60px;
   border-width: 0;
   transition: all 0.2s linear;
+  min-width: 254px;
 }
 .confirm button.Continue:hover {
   transform: scale(0.96);
@@ -2415,4 +2416,8 @@ footer.footer .mobile_title {
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   z-index: 1;
+}
+
+.conf2 button.edit::before {
+  content: "CORRECT DATA";
 }/*# sourceMappingURL=main.css.map */
