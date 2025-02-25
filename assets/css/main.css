@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -2221,4 +2222,197 @@ footer.footer .mobile_title {
 .thanks .contact_btn_lists a img {
   box-shadow: 0 0 27px #ffffff;
   width: 25px;
+}
+
+.confirm .choose_block {
+  margin-top: 24px;
+}
+.confirm .visa_Insurance.pay {
+  padding-bottom: 75px;
+}
+.confirm .buttonlists {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+  gap: 8px;
+}
+@media (max-width: 576px) {
+  .confirm .buttonlists {
+    flex-wrap: wrap;
+  }
+}
+.confirm .payment_block .bg::after {
+  top: auto;
+  bottom: -90px;
+  right: -108px;
+}
+@media (max-width: 576px) {
+  .confirm .payment_block .bg::before {
+    top: -160px;
+    left: -119px;
+  }
+}
+.confirm .cards {
+  position: relative;
+  z-index: 2;
+}
+.confirm .title {
+  color: #666;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.confirm .name {
+  margin-bottom: 18px;
+  font-size: 22px;
+  color: #212529;
+  font-weight: 700;
+}
+.confirm .insured {
+  padding: 18px 0;
+  border-top: 1px solid #f9dfdf;
+  border-bottom: 1px solid #f9dfdf;
+}
+.confirm .insured h4 {
+  font-size: 18px;
+  color: #212529;
+  font-weight: 700;
+  text-align: left;
+}
+.confirm .insured_list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+@media (max-width: 576px) {
+  .confirm .insured_list {
+    flex-direction: column;
+  }
+}
+.confirm .insured_item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #666666;
+  font-weight: 500;
+}
+.confirm .circle {
+  width: 24px;
+  height: 24px;
+  filter: drop-shadow(0px 7px 5px rgba(0, 0, 0, 0.06));
+  background-image: linear-gradient(0deg, #f3764b 0%, #f34b57 100%);
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.confirm .region, .confirm .email, .confirm .amount {
+  font-size: 14px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+.confirm .sum {
+  background: linear-gradient(90deg, #FF6A6A, #FF914D); /* Gradient rangi */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 8px;
+  color: #212529;
+  font-weight: 700;
+}
+.confirm .phone_label {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.confirm .phone_input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 0px;
+  border: 1px solid #f9dfdf;
+  outline: none;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.2s linear;
+}
+.confirm .phone_input:focus {
+  border: 1px solid #ec5605;
+}
+.confirm .buttons {
+  display: flex;
+  gap: 10px;
+}
+.confirm .confirm_info {
+  padding: 20px 0;
+  border-bottom: 1px solid #f9dfdf;
+}
+.confirm .confirm_info .amount {
+  margin-bottom: 0;
+}
+.confirm button.Continue {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 24px 60px;
+  border-width: 0;
+  transition: all 0.2s linear;
+}
+.confirm button.Continue:hover {
+  transform: scale(0.96);
+}
+@media (max-width: 576px) {
+  .confirm button.Continue {
+    top: 24px;
+    width: 254px !important;
+  }
+}
+.confirm button.edit {
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 24px 25px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  border: none;
+  background: #fff; /* Orqa fon */
+}
+.confirm button.edit::before {
+  content: "ИСПРАВИТЬ ДАННЫЕ";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  background: linear-gradient(90deg, rgb(243, 118, 75) 0%, rgb(243, 75, 88) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  z-index: 2;
+}
+.confirm button.edit::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 40px;
+  padding: 3px;
+  background: linear-gradient(135deg, #ff7a5f, #ff3d67);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: 1;
 }/*# sourceMappingURL=main.css.map */

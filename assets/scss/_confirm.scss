@@ -1,0 +1,194 @@
+.confirm{
+    .choose_block{
+        margin-top: 24px;
+    }
+    .visa_Insurance.pay{
+        padding-bottom: 75px;
+    }
+    .buttonlists{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        margin: 0 auto;
+        gap: 8px;
+        @media #{$mobile} {
+        flex-wrap: wrap;
+        }
+    }
+    .payment_block .bg::after{
+        top: auto;
+        bottom: -90px;
+        right: -108px;
+    }
+    .payment_block .bg::before{
+        // top: auto;
+        // bottom: -90px;
+        // right: -108px;
+        @media #{$mobile} {
+            top: -160px;
+            left: -119px;
+        }
+    }
+    .cards{
+        position: relative;
+        z-index: 2;
+    }
+    .title {
+        color: #666;
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    .name {
+        margin-bottom: 18px;
+        font-size: 22px;
+        color: #212529;
+        font-weight: 700;
+    }
+    .insured{
+        padding: 18px 0;
+        border-top:1px solid #f9dfdf ;
+        border-bottom:1px solid #f9dfdf ;
+        h4 {
+            font-size: 18px;
+            color: #212529;
+            font-weight: 700;
+            text-align: left;
+        }
+
+    }
+    .insured_list {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        @media #{$mobile} {
+           flex-direction: column;
+        }
+    }
+    .insured_item {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: #666666;
+        font-weight: 500;
+    }
+    .circle {
+        width: 24px;
+        height: 24px;
+        filter: drop-shadow(0px 7px 5px rgba(0,0,0,0.06));
+        background-image: linear-gradient(0deg, #f3764b 0%, #f34b57 100%);
+        font-size: 15px;
+        color: #ffffff;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+    .region, .email, .amount {
+        font-size: 14px;
+        margin-bottom: 8px;
+        text-align: left;
+    }
+    .sum{
+        background: linear-gradient(90deg, #FF6A6A, #FF914D); /* Gradient rangi */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-left: 8px;
+        color: #212529;
+        font-weight: 700;
+    }
+    .phone_label {
+        display: block;
+        text-align: left;
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .phone_input {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 0px;
+        border:1px solid #f9dfdf;
+        outline: none;
+        border-radius: 8px;
+        font-size: 14px;
+        transition: all .2s linear;
+        &:focus{
+            border:1px solid #ec5605;
+        }
+    }
+    .buttons {
+        display: flex;
+        gap: 10px;
+    }
+    .confirm_info{
+        padding: 20px 0;
+        border-bottom:1px solid #f9dfdf ;
+        .amount{
+            margin-bottom: 0;
+        }
+    }
+    button.Continue{
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 700;
+        padding:24px 60px ;
+        border-width: 0;
+        transition: all .2s linear;
+        &:hover{
+            transform: scale(.96);
+        }
+        @media #{$mobile} {
+            top:24px;
+            width: 254px !important;
+        }
+    }
+    button.edit {
+        position: relative;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 24px 25px;
+        border-radius: 40px;
+        text-transform: uppercase;
+        cursor: pointer;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        border: none;
+        background: #fff; /* Orqa fon */
+    }
+    button.edit::before {
+        content: "ИСПРАВИТЬ ДАННЫЕ";
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: inherit;
+        font-weight: inherit;
+        text-transform: inherit;
+        background:linear-gradient(90deg, rgb(243, 118, 75) 0%, rgb(243, 75, 88) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        z-index: 2;
+    }
+    button.edit::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 40px;
+        padding: 3px;
+        background: linear-gradient(135deg, #ff7a5f, #ff3d67);
+        -webkit-mask: 
+            linear-gradient(#fff 0 0) content-box, 
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        z-index: 1;
+    }
+}

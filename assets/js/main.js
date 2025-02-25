@@ -89,7 +89,6 @@ $(document).ready(function () {
             modal_open_recovery.classList.remove('show');
             modal_open_checking.classList.add('show');
             overlay_checking.classList.add('show');
-            // recovery_form.submit();   
           }
       });
     // info
