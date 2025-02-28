@@ -2235,6 +2235,11 @@ footer.footer .mobile_title {
 .confirm .choose_block {
   margin-top: 24px;
 }
+@media (max-width: 556px) {
+  .confirm .choose_block .choose_payment {
+    padding: 30px;
+  }
+}
 .confirm .visa_Insurance.pay {
   padding-bottom: 75px;
   padding-top: 36px;
@@ -2258,9 +2263,16 @@ footer.footer .mobile_title {
   right: -108px;
 }
 @media (max-width: 576px) {
+  .confirm .payment_block .bg::after {
+    bottom: -99px;
+    right: -158px;
+  }
+}
+@media (max-width: 576px) {
   .confirm .payment_block .bg::before {
-    top: -160px;
-    left: -119px;
+    transform: rotate(100deg);
+    top: -150px;
+    left: -193px;
   }
 }
 .confirm .cards {
