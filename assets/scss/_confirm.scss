@@ -4,6 +4,7 @@
     }
     .visa_Insurance.pay{
         padding-bottom: 75px;
+        padding-top: 36px;
     }
     .buttonlists{
         display: flex;
@@ -17,6 +18,7 @@
         }
     }
     .payment_block .bg::after{
+        // background-image: url('../images/confirm_top.png');
         top: auto;
         bottom: -90px;
         right: -108px;
@@ -116,6 +118,12 @@
         border-radius: 8px;
         font-size: 14px;
         transition: all .2s linear;
+        max-width:332px;
+        transform: translateX(-9%);
+        @media (max-width:556px) {
+            transform: translateX(0%);
+            max-width: 100%; 
+        }
         &:focus{
             border:1px solid #ec5605;
         }

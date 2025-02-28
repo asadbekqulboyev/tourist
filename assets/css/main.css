@@ -2237,6 +2237,7 @@ footer.footer .mobile_title {
 }
 .confirm .visa_Insurance.pay {
   padding-bottom: 75px;
+  padding-top: 36px;
 }
 .confirm .buttonlists {
   display: flex;
@@ -2349,6 +2350,14 @@ footer.footer .mobile_title {
   border-radius: 8px;
   font-size: 14px;
   transition: all 0.2s linear;
+  max-width: 332px;
+  transform: translateX(-9%);
+}
+@media (max-width: 556px) {
+  .confirm .phone_input {
+    transform: translateX(0%);
+    max-width: 100%;
+  }
 }
 .confirm .phone_input:focus {
   border: 1px solid #ec5605;
