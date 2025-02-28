@@ -1,6 +1,7 @@
 .confirm{
     .choose_block{
         margin-top: 24px;
+        
         .choose_payment{
             @media (max-width:556px) {
                 padding: 30px;
@@ -10,6 +11,9 @@
     .visa_Insurance.pay{
         padding-bottom: 75px;
         padding-top: 36px;
+        @media (max-width:556px) {
+            padding-top: 0;
+        }
     }
     .buttonlists{
         display: flex;
@@ -28,8 +32,10 @@
         bottom: -90px;
         right: -108px;
         @media #{$mobile} {
-            bottom: -99px;
-            right: -158px;
+            width: 257px;
+            height: 257px;
+            bottom: -109px;
+            right: -123px;
         }
     }
     .payment_block .bg::before{
@@ -40,7 +46,9 @@
             transform: rotate(100deg);
             top: -150px;
             left: -193px;
-    
+            transform: rotate(132deg);
+        top: -147px;
+        left: -169px;
         }
     }
     .cards{
@@ -68,6 +76,10 @@
             color: #212529;
             font-weight: 700;
             text-align: left;
+            @media (max-width:556px) {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
         }
 
     }
@@ -77,6 +89,7 @@
         gap: 16px;
         @media #{$mobile} {
            flex-direction: column;
+           gap: 8px 0;
         }
     }
     .insured_item {

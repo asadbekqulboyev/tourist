@@ -2244,6 +2244,11 @@ footer.footer .mobile_title {
   padding-bottom: 75px;
   padding-top: 36px;
 }
+@media (max-width: 556px) {
+  .confirm .visa_Insurance.pay {
+    padding-top: 0;
+  }
+}
 .confirm .buttonlists {
   display: flex;
   align-items: center;
@@ -2264,8 +2269,10 @@ footer.footer .mobile_title {
 }
 @media (max-width: 576px) {
   .confirm .payment_block .bg::after {
-    bottom: -99px;
-    right: -158px;
+    width: 257px;
+    height: 257px;
+    bottom: -109px;
+    right: -123px;
   }
 }
 @media (max-width: 576px) {
@@ -2273,6 +2280,9 @@ footer.footer .mobile_title {
     transform: rotate(100deg);
     top: -150px;
     left: -193px;
+    transform: rotate(132deg);
+    top: -147px;
+    left: -169px;
   }
 }
 .confirm .cards {
@@ -2302,6 +2312,12 @@ footer.footer .mobile_title {
   font-weight: 700;
   text-align: left;
 }
+@media (max-width: 556px) {
+  .confirm .insured h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+}
 .confirm .insured_list {
   display: flex;
   justify-content: center;
@@ -2310,6 +2326,7 @@ footer.footer .mobile_title {
 @media (max-width: 576px) {
   .confirm .insured_list {
     flex-direction: column;
+    gap: 8px 0;
   }
 }
 .confirm .insured_item {
