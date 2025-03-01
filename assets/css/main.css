@@ -2355,6 +2355,13 @@ footer.footer .mobile_title {
   margin-bottom: 8px;
   text-align: left;
 }
+.confirm .region .sum_exit, .confirm .email .sum_exit, .confirm .amount .sum_exit {
+  text-decoration: line-through;
+  color: #919191;
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: 8px;
+}
 .confirm .sum {
   background: linear-gradient(90deg, #FF6A6A, #FF914D); /* Gradient rangi */
   -webkit-background-clip: text;

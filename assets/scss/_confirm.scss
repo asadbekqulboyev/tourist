@@ -117,6 +117,13 @@
         font-size: 14px;
         margin-bottom: 8px;
         text-align: left;
+        .sum_exit{
+            text-decoration: line-through;
+            color: #919191;
+            font-size: 12px;
+            font-weight: 600;
+            padding-left: 8px;
+        }
     }
     .sum{
         background: linear-gradient(90deg, #FF6A6A, #FF914D); /* Gradient rangi */
